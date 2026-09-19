@@ -9,25 +9,40 @@ with open("documentos.jsonl", "r", encoding="utf-8") as arquivo:
         documentos.append(json.loads(linha))
 
 
-# Vamos dividir cada documento em pedaços
-# de aproximadamente 100 palavras.
+# Configurações dos chunks
+tamanho_chunk = 100
+overlap = 20
+
 chunks = []
+
 
 for documento in documentos:
 
     palavras = documento["text"].split()
 
-    for i in range(0, len(palavras), 100):
+    inicio = 0
 
-        trecho = " ".join(palavras[i:i + 100])
+    while inicio < len(palavras):
+
+        fim = inicio + tamanho_chunk
+
+        trecho = " ".join(palavras[inicio:fim])
 
         chunks.append({
             "id": documento["id"],
             "chunk": trecho
         })
 
+        # Avança 80 palavras.
+        # As últimas 20 palavras serão repetidas
+        # no próximo chunk.
+        inicio += tamanho_chunk - overlap
+
 
 print("Quantidade de chunks:", len(chunks))
 
-print("\nQuarto chunk:")
-print(chunks[3]["chunk"])
+print("\nPrimeiro chunk:")
+print(chunks[0]["chunk"])
+
+print("\nSegundo chunk:")
+print(chunks[1]["chunk"])

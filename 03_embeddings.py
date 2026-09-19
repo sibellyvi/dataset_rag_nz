@@ -2,7 +2,7 @@ import json
 from sentence_transformers import SentenceTransformer
 
 
-# Carrega os chunks
+# Carrega os documentos
 with open("documentos.jsonl", "r", encoding="utf-8") as arquivo:
     documentos = []
 
@@ -10,25 +10,38 @@ with open("documentos.jsonl", "r", encoding="utf-8") as arquivo:
         documentos.append(json.loads(linha))
 
 
-# Divide os documentos novamente em chunks
+# Configurações dos chunks
+tamanho_chunk = 100
+overlap = 20
+
 chunks = []
 
+
+# Cria os chunks com overlap
 for documento in documentos:
 
     palavras = documento["text"].split()
 
-    for i in range(0, len(palavras), 100):
+    inicio = 0
 
-        trecho = " ".join(palavras[i:i + 100])
+    while inicio < len(palavras):
+
+        fim = inicio + tamanho_chunk
+
+        trecho = " ".join(palavras[inicio:fim])
 
         chunks.append({
             "id": documento["id"],
             "chunk": trecho
         })
 
+        inicio += tamanho_chunk - overlap
+
 
 # Carrega o modelo de embeddings
-modelo = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+modelo = SentenceTransformer(
+    "paraphrase-multilingual-MiniLM-L12-v2"
+)
 
 
 # Gera um embedding para cada chunk

@@ -11,34 +11,47 @@ with open("documentos.jsonl", "r", encoding="utf-8") as arquivo:
         documentos.append(json.loads(linha))
 
 
-# Cria os chunks
+# Configurações dos chunks
+tamanho_chunk = 100
+overlap = 20
+
 chunks = []
 
+
+# Cria os chunks com overlap
 for documento in documentos:
 
     palavras = documento["text"].split()
 
-    for i in range(0, len(palavras), 100):
+    inicio = 0
 
-        trecho = " ".join(palavras[i:i + 100])
+    while inicio < len(palavras):
+
+        fim = inicio + tamanho_chunk
+
+        trecho = " ".join(palavras[inicio:fim])
 
         chunks.append({
             "id": documento["id"],
             "chunk": trecho
         })
 
+        inicio += tamanho_chunk - overlap
+
 
 # Carrega o modelo
-modelo = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+modelo = SentenceTransformer(
+    "paraphrase-multilingual-MiniLM-L12-v2"
+)
 
 
-# Gera embeddings dos chunks
+# Gera os embeddings dos chunks
 textos = [chunk["chunk"] for chunk in chunks]
 
 embeddings_chunks = modelo.encode(textos)
 
 
-# Pergunta do usuário
+# Pergunta
 pergunta = "Qual é a capital da Nova Zelândia?"
 
 
@@ -46,26 +59,24 @@ pergunta = "Qual é a capital da Nova Zelândia?"
 embedding_pergunta = modelo.encode([pergunta])
 
 
-# Compara a pergunta com todos os chunks
+# Calcula a similaridade
 similaridades = cosine_similarity(
     embedding_pergunta,
     embeddings_chunks
 )[0]
 
 
-# Define quantos chunks queremos recuperar
+# Recupera os 3 chunks mais relevantes
 top_k = 3
 
-
-# Ordena os índices dos chunks pela similaridade
 indices = similaridades.argsort()[::-1]
 
 
 print("Pergunta:")
 print(pergunta)
 
-
 print("\n3 chunks mais relevantes:\n")
+
 
 for posicao in range(top_k):
 
