@@ -1,0 +1,50 @@
+{"id":"q01","question":"Qual é a capital da Nova Zelândia?","answer":"Wellington.","source_id":"doc_01"}
+{"id":"q02","question":"Quais são as duas principais ilhas do país?","answer":"Ilha Norte e Ilha Sul.","source_id":"doc_01"}
+{"id":"q03","question":"Em qual oceano está localizada a Nova Zelândia?","answer":"No sudoeste do Oceano Pacífico.","source_id":"doc_01"}
+{"id":"q04","question":"Qual é a maior cidade da Nova Zelândia em população?","answer":"Auckland.","source_id":"doc_01"}
+{"id":"q05","question":"Quem são os Māori?","answer":"São o povo indígena da Nova Zelândia.","source_id":"doc_03"}
+{"id":"q06","question":"Qual é o nome da língua Māori?","answer":"Te reo Māori.","source_id":"doc_03"}
+{"id":"q07","question":"O que significa whakapapa no contexto da cultura Māori?","answer":"Está relacionado à genealogia e às relações entre pessoas, ancestrais e elementos do mundo natural.","source_id":"doc_03"}
+{"id":"q08","question":"O que é um marae?","answer":"É um espaço tradicional de encontro comunitário Māori.","source_id":"doc_03"}
+{"id":"q09","question":"Em que ano foi assinado o Tratado de Waitangi?","answer":"1840.","source_id":"doc_04"}
+{"id":"q10","question":"Entre quais grupos o Tratado de Waitangi foi assinado?","answer":"Entre representantes da Coroa Britânica e muitos chefes Māori.","source_id":"doc_04"}
+{"id":"q11","question":"Por que existem debates sobre o significado do Tratado de Waitangi?","answer":"Porque existem diferenças entre suas versões em inglês e em te reo Māori, além de debates históricos sobre soberania, autoridade, governança, terras e direitos.","source_id":"doc_04"}
+{"id":"q12","question":"Qual cidade é a capital política da Nova Zelândia?","answer":"Wellington.","source_id":"doc_05"}
+{"id":"q13","question":"Qual cidade é o principal centro populacional do país?","answer":"Auckland.","source_id":"doc_05"}
+{"id":"q14","question":"Qual cidade neozelandesa é conhecida por suas áreas geotérmicas?","answer":"Rotorua.","source_id":"doc_05"}
+{"id":"q15","question":"Como é o clima predominante da Nova Zelândia?","answer":"Predominantemente temperado, com variações entre as regiões.","source_id":"doc_06"}
+{"id":"q16","question":"Por que o oceano influencia o clima da Nova Zelândia?","answer":"Porque o país é formado por ilhas e possui forte influência marítima devido à sua localização no Oceano Pacífico.","source_id":"doc_06"}
+{"id":"q17","question":"Qual é a montanha mais alta da Nova Zelândia?","answer":"Aoraki ou Mount Cook.","source_id":"doc_07"}
+{"id":"q18","question":"Onde estão localizados os Alpes do Sul?","answer":"Eles atravessam grande parte da Ilha Sul.","source_id":"doc_07"}
+{"id":"q19","question":"O que é Piopiotahi?","answer":"É o nome em Māori do Milford Sound.","source_id":"doc_07"}
+{"id":"q20","question":"Qual ave se tornou um símbolo nacional da Nova Zelândia?","answer":"O kiwi.","source_id":"doc_08"}
+{"id":"q21","question":"Por que a biodiversidade da Nova Zelândia possui características particulares?","answer":"A localização isolada do país favoreceu a evolução de espécies que não são encontradas naturalmente em muitos outros lugares.","source_id":"doc_08"}
+{"id":"q22","question":"Cite uma ave nativa ameaçada mencionada no documento.","answer":"Kākāpō ou takahē.","source_id":"doc_08"}
+{"id":"q23","question":"Quais animais introduzidos representam ameaças para espécies nativas?","answer":"Ratos, gatos, arminhos e outros animais introduzidos.","source_id":"doc_08"}
+{"id":"q24","question":"Qual órgão possui papel importante na conservação das áreas naturais públicas?","answer":"Department of Conservation, conhecido como DOC.","source_id":"doc_09"}
+{"id":"q25","question":"Cite dois parques nacionais da Nova Zelândia.","answer":"Exemplos incluem Tongariro, Fiordland, Aoraki Mount Cook, Abel Tasman e Westland Tai Poutini.","source_id":"doc_09"}
+{"id":"q26","question":"Por que existem terremotos e vulcões na Nova Zelândia?","answer":"Porque o país está em uma região tectonicamente ativa, próxima ao limite entre as placas do Pacífico e Australiana.","source_id":"doc_10"}
+{"id":"q27","question":"Qual região é conhecida por gêiseres e fontes termais?","answer":"Rotorua e a região de Taupō, na Ilha Norte.","source_id":"doc_10"}
+{"id":"q28","question":"Que tipo de fenômeno natural pode ser observado em Rotorua?","answer":"Fenômenos geotérmicos como gêiseres, fontes termais e piscinas de lama.","source_id":"doc_10"}
+{"id":"q29","question":"Quais setores possuem participação importante na economia da Nova Zelândia?","answer":"Serviços, agricultura, pecuária, indústria alimentícia, turismo e comércio internacional.","source_id":"doc_11"}
+{"id":"q30","question":"Por que o turismo é economicamente importante para o país?","answer":"Porque as paisagens naturais, atividades ao ar livre e experiências culturais atraem visitantes.","source_id":"doc_11"}
+{"id":"q31","question":"Quais produtos agrícolas são importantes para as exportações?","answer":"Leite e derivados, carne, frutas e vinho, entre outros produtos.","source_id":"doc_12"}
+{"id":"q32","question":"Qual atividade pecuária possui grande importância econômica na Nova Zelândia?","answer":"A produção de leite e derivados é uma atividade relevante, assim como a produção de carne bovina e ovina.","source_id":"doc_12"}
+{"id":"q33","question":"Qual região é conhecida pela produção de vinho?","answer":"Marlborough é uma das regiões produtoras de vinho mencionadas.","source_id":"doc_12"}
+{"id":"q34","question":"Que tipos de atividades atraem turistas para a Nova Zelândia?","answer":"Caminhadas, observação da natureza, esportes de aventura, passeios de barco e visitas a locais culturais, entre outras.","source_id":"doc_13"}
+{"id":"q35","question":"Qual cidade é conhecida por atividades de aventura?","answer":"Queenstown.","source_id":"doc_13"}
+{"id":"q36","question":"Qual esporte é especialmente associado à identidade esportiva da Nova Zelândia?","answer":"Rugby union.","source_id":"doc_14"}
+{"id":"q37","question":"Como é chamada a seleção masculina de rugby da Nova Zelândia?","answer":"All Blacks.","source_id":"doc_14"}
+{"id":"q38","question":"Qual performance tradicional Māori é realizada pelos All Blacks antes de determinadas partidas?","answer":"O haka.","source_id":"doc_14"}
+{"id":"q39","question":"Quem dirigiu as trilogias O Senhor dos Anéis e O Hobbit?","answer":"Peter Jackson.","source_id":"doc_15"}
+{"id":"q40","question":"Qual atração turística está relacionada às filmagens de O Senhor dos Anéis?","answer":"Hobbiton, próximo à cidade de Matamata.","source_id":"doc_15"}
+{"id":"q41","question":"Qual idioma é mais utilizado na Nova Zelândia?","answer":"O inglês.","source_id":"doc_16"}
+{"id":"q42","question":"Quais línguas possuem status oficial na Nova Zelândia?","answer":"O inglês é amplamente utilizado; o te reo Māori e a Língua de Sinais da Nova Zelândia possuem status oficial.","source_id":"doc_16"}
+{"id":"q43","question":"Qual museu nacional está localizado em Wellington?","answer":"Te Papa Tongarewa, o Museum of New Zealand Te Papa Tongarewa.","source_id":"doc_18"}
+{"id":"q44","question":"Que tipos de coleções podem ser encontrados no Te Papa Tongarewa?","answer":"Coleções relacionadas à história, cultura, arte e ambiente natural da Nova Zelândia.","source_id":"doc_18"}
+{"id":"q45","question":"O que separa a Ilha Norte da Ilha Sul?","answer":"O Estreito de Cook.","source_id":"doc_19"}
+{"id":"q46","question":"Como é possível viajar entre Wellington e Picton?","answer":"Por serviços de ferry e também por transporte aéreo.","source_id":"doc_19"}
+{"id":"q47","question":"Quais culturas influenciam a identidade nacional da Nova Zelândia?","answer":"As culturas Māori, europeia e comunidades formadas pela imigração de diferentes regiões do mundo, incluindo influências do Pacífico e da Ásia.","source_id":"doc_20"}
+{"id":"q48","question":"Por que a língua Māori é importante para a identidade cultural da Nova Zelândia?","answer":"Porque é parte importante da cultura e identidade Māori e possui status de língua oficial do país.","source_id":"doc_20"}
+{"id":"q49","question":"Qual é a relação entre a geografia e o desenvolvimento da biodiversidade da Nova Zelândia?","answer":"O isolamento geográfico das ilhas favoreceu a evolução de espécies particulares.","source_id":"doc_08"}
+{"id":"q50","question":"Quais fatores geográficos tornam o transporte na Nova Zelândia um desafio?","answer":"A separação das ilhas, montanhas, áreas rurais e distância entre centros urbanos influenciam a infraestrutura de transporte.","source_id":"doc_19"}
