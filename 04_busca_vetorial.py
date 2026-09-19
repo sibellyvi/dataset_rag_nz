@@ -53,15 +53,25 @@ similaridades = cosine_similarity(
 )[0]
 
 
-# Descobre qual chunk teve a maior similaridade
-indice_melhor_chunk = similaridades.argmax()
+# Define quantos chunks queremos recuperar
+top_k = 3
+
+
+# Ordena os índices dos chunks pela similaridade
+indices = similaridades.argsort()[::-1]
 
 
 print("Pergunta:")
 print(pergunta)
 
-print("\nChunk mais parecido:")
-print(chunks[indice_melhor_chunk]["chunk"])
 
-print("\nSimilaridade:")
-print(similaridades[indice_melhor_chunk])
+print("\n3 chunks mais relevantes:\n")
+
+for posicao in range(top_k):
+
+    indice = indices[posicao]
+
+    print(f"--- Chunk {posicao + 1} ---")
+    print("Similaridade:", similaridades[indice])
+    print(chunks[indice]["chunk"])
+    print()
