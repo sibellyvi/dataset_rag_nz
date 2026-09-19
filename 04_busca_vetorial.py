@@ -52,7 +52,7 @@ embeddings_chunks = modelo.encode(textos)
 
 
 # Pergunta
-pergunta = "Qual é a capital da Nova Zelândia?"
+pergunta = "Em qual continente fica a Nova Zelândia?"
 
 
 # Gera o embedding da pergunta
